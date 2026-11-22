@@ -1,1 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7c3aed"><title>حوار مع صديقتي Zoza — تعلّم الإنجليزية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,sans-serif;background:linear-gradient(135deg,#fdf2f8,#eef2ff);color:#1f2937;min-height:100vh}
+button{font-family:inherit;cursor:pointer}main{max-width:720px;margin:auto;padding:10px}
+#lock{position:fixed;inset:0;background:#1a1a1a;z-index:99;display:flex;align-items:center;justify-content:center}
+#lock div{background:#fff;padding:26px;border-radius:14px;width:320px}#lock input{width:100%;padding:10px;margin:6px 0 12px;border:1px solid #ddd;border-radius:8px;font-size:16px}
+.big{width:100%;padding:12px;border:0;border-radius:10px;background:#7c3aed;color:#fff;font-weight:700;font-size:16px}
+#stage{position:relative;border-radius:26px;overflow:hidden;color:#fff;text-align:center;padding:8px 8px 10px;background:radial-gradient(circle at 50% 30%,#a78bfa,#7c3aed 45%,#312e81)}
+#fig{position:relative;height:min(42vh,320px);aspect-ratio:1;margin:auto;border-radius:24px;overflow:hidden;transform-origin:50% 95%;box-shadow:0 12px 24px rgba(0,0,0,.4);will-change:transform}#fig img,#fig svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+#ring{position:absolute;left:50%;top:44%;width:210px;height:210px;margin:-105px;border-radius:50%;border:3px solid rgba(255,255,255,.0);pointer-events:none;transition:.3s}
+.listen #ring{border-color:#86efac;animation:pu 1.2s infinite}.think #ring{border-color:#fde68a;animation:pu 2s infinite}.speak #ring{border-color:#f9a8d4;animation:pu .7s infinite}
+@keyframes pu{50%{transform:scale(1.08);opacity:.4}}
+#stt{font-weight:800;font-size:.9rem}#cap{min-height:2.4em;direction:ltr;font-size:.95rem;opacity:.95;padding:0 8px}
+.card{background:#fff;border:1px solid #e9d5ff;border-radius:18px;padding:8px;margin:8px 0}
+.row{display:flex;gap:6px;overflow-x:auto;padding:2px}.row button,.tg button{flex:none;border:1px solid #e9d5ff;background:#fff;border-radius:16px;padding:7px 11px;font-weight:800;font-size:.8rem;color:#6b21a8}
+.row button.on,.tg button.on{background:#7c3aed;color:#fff}
+#chat{height:min(36vh,330px);overflow-y:auto;background:rgba(255,255,255,.6);border:1px solid #e9d5ff;border-radius:18px;padding:8px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:88%;padding:8px 11px;border-radius:16px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);align-self:flex-start}.m.u{align-self:flex-end;background:#7c3aed;color:#fff}
+.tx{direction:ltr;text-align:left;font-weight:700;line-height:1.7}.ar{font-size:.82rem;color:#6b7280;margin-top:3px}.m button{border:0;background:#f3e8ff;border-radius:12px;padding:3px 9px;margin-top:4px}
+.fx{background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:6px 9px;margin-top:6px;font-size:.8rem;color:#1f2937}.fx s{color:#dc2626}.fx u{color:#16a34a;text-decoration:none;font-weight:800}
+#sg{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}#sg button{border:1.5px solid #c4b5fd;background:#fff;color:#6d28d9;border-radius:15px;padding:6px 11px;font-weight:800;direction:ltr}
+#in{display:flex;gap:6px;align-items:center}#ip{flex:1;min-width:0;padding:12px;border:2px solid #e9d5ff;border-radius:16px;font-size:1rem;direction:ltr}
+.rd{width:54px;height:54px;border-radius:50%;border:0;background:#7c3aed;color:#fff;font-size:1.4rem}.rd.on{background:#16a34a;animation:pu 1s infinite}
+footer{text-align:center;font-size:.75rem;color:#6b7280;padding:10px}.t{font-size:.75rem;text-align:center;color:#6b7280}
+#cover{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px;text-align:center;color:#fff;overflow:auto;font-family:Cairo,Tahoma,sans-serif;background:linear-gradient(135deg,#1e1b4b,#4c1d95,#be185d,#4c1d95,#1e1b4b);background-size:400% 400%;animation:bg 14s ease infinite;transition:opacity .7s,transform .7s}
+#cover.out{opacity:0;transform:scale(1.08);pointer-events:none}@keyframes bg{50%{background-position:100% 50%}}
+.sk{position:absolute;inset:0;pointer-events:none;overflow:hidden}.sk:before{content:"";position:absolute;top:0;left:0;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 4s infinite;box-shadow:12vw 8vh #fff,30vw 20vh #fde68a,55vw 6vh #fff,78vw 14vh #f9a8d4,90vw 30vh #fff,8vw 45vh #fde68a,40vw 55vh #fff,66vw 48vh #fff,85vw 62vh #fde68a,20vw 75vh #fff,50vw 85vh #f9a8d4,72vw 90vh #fff,95vw 80vh #fff,5vw 92vh #fde68a}@keyframes tw{50%{opacity:.2}}
+.cav{position:relative;width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #fde68a;box-shadow:0 0 0 8px rgba(255,255,255,.12),0 0 50px #f472b6;animation:fl 4s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-10px)}}
+.ct{font-weight:900;font-size:clamp(1.6rem,6vw,2.6rem);margin:0;line-height:1.5;background:linear-gradient(90deg,#fff,#f9a8d4,#fde68a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cs{margin:0;max-width:480px;line-height:1.9;font-size:.95rem;opacity:.95;position:relative}
+.cf{position:relative;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:520px}.cf span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:18px;padding:6px 12px;font-weight:700;font-size:.82rem;backdrop-filter:blur(6px)}
+.dev{position:relative;margin-top:4px;padding:12px 24px 8px;border-radius:24px;border:1px solid rgba(253,230,138,.6);background:rgba(0,0,0,.3);box-shadow:0 0 34px rgba(253,224,71,.28)}
+.dev small{display:block;letter-spacing:3px;font-size:.8rem;color:#fde68a}
+.dn{font-family:'Aref Ruqaa',Amiri,serif;font-weight:700;font-size:clamp(1.9rem,8vw,3.2rem);line-height:1.6;background:linear-gradient(90deg,#fde68a,#fff,#f59e0b,#fff,#fde68a);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 4s linear infinite;filter:drop-shadow(0 2px 8px rgba(245,158,11,.6))}@keyframes sh{to{background-position:-250% 0}}
+.go{position:relative;border:0;border-radius:30px;padding:14px 34px;font-family:inherit;font-size:1.15rem;font-weight:900;color:#4c1d95;background:linear-gradient(90deg,#fde68a,#f9a8d4);box-shadow:0 8px 24px rgba(0,0,0,.4);animation:pl 1.6s infinite}@keyframes pl{50%{transform:scale(1.06)}}
+.cr{position:relative;font-size:.78rem;opacity:.92;max-width:470px;line-height:1.9;margin:0}.cr b{color:#fde68a}
 
+/* ===== تجاوب كامل: موبايل / تابلت / لابتوب / كمبيوتر ===== */
+:root{--fh:clamp(150px,34dvh,340px)}
+html{-webkit-text-size-adjust:100%}html,body{overflow-x:hidden}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+main{width:100%}
+#fig{height:var(--fh)}
+#ring{width:calc(var(--fh)*1.1);height:calc(var(--fh)*1.1);top:calc(8px + var(--fh)/2);margin:calc(var(--fh)*-.55) 0 0 calc(var(--fh)*-.55);border-radius:30px}
+#chat{height:clamp(170px,32dvh,420px)}
+.row button,.tg button,#sg button,.m button{min-height:36px}
+#lock div{width:min(340px,90vw)}
+#cover{justify-content:flex-start;min-height:100dvh;padding:max(18px,env(safe-area-inset-top)) 18px max(18px,env(safe-area-inset-bottom))}
+.cav{margin-top:auto;width:clamp(90px,18dvh,170px);height:clamp(90px,18dvh,170px);flex:none}.cr{margin-bottom:auto}
+@media (max-height:640px){#cover{gap:7px}.cs{font-size:.85rem;line-height:1.6}.cf span{padding:4px 9px;font-size:.75rem}.go{padding:10px 26px}}
+@media (min-width:600px){main{max-width:760px;padding:14px}:root{--fh:clamp(220px,38dvh,400px)}.cs{font-size:1.05rem;max-width:560px}.cf span{font-size:.95rem;padding:8px 15px}}
+@media (min-width:900px),(orientation:landscape) and (min-width:600px){
+ main{max-width:1180px;display:grid;grid-template-columns:minmax(340px,.9fr) 1.1fr;gap:14px;align-items:start}
+ #stage{grid-column:1;grid-row:1}.card{grid-column:1;grid-row:2;margin:0}
+ #chat{grid-column:2;grid-row:1;height:clamp(300px,calc(100dvh - 150px),720px)}
+ #sg{grid-column:2;grid-row:2;margin:0}#in{grid-column:2;grid-row:3}.t{grid-column:1/3;grid-row:4}
+ :root{--fh:clamp(200px,46dvh,420px)}}
+@media (orientation:landscape) and (max-height:520px){:root{--fh:clamp(110px,52dvh,230px)}#chat{height:calc(100dvh - 130px)}.cav{display:none}}
+@media (min-width:1500px){main{max-width:1360px}html{font-size:17px}}
+.nm{position:relative;width:min(330px,86vw);padding:12px 16px;border-radius:26px;border:2px solid rgba(253,230,138,.75);background:rgba(255,255,255,.96);font:700 1rem Cairo,Tahoma,sans-serif;text-align:center;color:#4c1d95;outline:0}.nl{position:relative;font-size:.85rem;font-weight:700;color:#fde68a;margin:0}
+</style></head><body>
+<div id="cover"><div class="sk"></div>
+<img class="cav" src="assets/zoza.jpg" alt="Zoza" onerror="this.style.display='none'">
+<h1 class="ct">حوار مع صديقتي Zoza</h1>
+<p class="cs">صديقة ذكية بوجه حيّ تتحدث معك بالإنجليزية بصوتها، تفهم كلامك وترد عليك وتصحح أخطاءك بلطف، لتتعلم وأنت تتحدث وتستمتع.</p>
+<div class="cf"><span>🎙️ حوار صوتي حرّ</span><span>🧠 ذكاء يفهمك ويتذكرك</span><span>🎭 مواضيع متنوعة وألعاب</span><span>✏️ تصحيح فوري بالعربية</span></div>
+<div class="dev"><small>✦ تطوير وإعداد ✦</small><div class="dn">مسيو/ محمود أبوبكر السويدى</div></div>
+<p class="nl">👤 ما اسمك؟ ستناديك زوزا به (اكتبه بحروف لاتينية لينطق جيدًا)</p><input class="nm" id="nm" maxlength="20" autocomplete="given-name" placeholder="Ahmed">
+<button class="go" id="cgo">✨ ابدأ الحوار مع زوزا</button>
+<p class="cr">© جميع حقوق النشر والتوزيع محفوظة لمنشئ المحتوى<br><b>مسيو/ محمود أبوبكر السويدى</b></p></div>
+<div id="lock"><div><h3 style="text-align:center;margin:0 0 12px">تسجيل الدخول</h3><label>اسم المستخدم</label><input id="u"><label>الرقم السري</label><input id="p" type="password"><button class="big" id="go">دخول</button><p id="er" style="color:#dc3545;display:none;text-align:center">بيانات غير صحيحة</p></div></div>
+<main>
+<section id="stage"><div id="ring"></div>
+<div id="fig"><img src="assets/zoza.jpg" alt="Zoza"><svg viewBox="0 0 554 554" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="fz" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<linearGradient id="fk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4f3f9"/><stop offset=".5" stop-color="#d9e6ec"/><stop offset="1" stop-color="#b6c8d0"/></linearGradient>
+<clipPath id="cm"><path id="cmp"/></clipPath></defs>
+<ellipse id="lA" cx="215" cy="157" rx="33" ry="0" fill="#04101c" filter="url(#fz)"/><ellipse id="lB" cx="335" cy="164" rx="33" ry="0" fill="#04101c" filter="url(#fz)"/>
+<rect x="210" y="234" width="124" height="70" rx="32" fill="url(#fk)" filter="url(#fz)"/>
+<path id="mt" fill="#12080f"/><g clip-path="url(#cm)"><path id="tt" fill="#f6f9fb"/><ellipse id="tg" fill="#e0566a"/></g></svg></div>
+<div id="stt">✨ جاهزة</div><div id="cap"></div></section>
+<div class="card"><div class="row" id="lv"></div><div class="row" id="tp"></div><div class="row tg" id="tg"></div></div>
+<div id="chat"></div><div id="sg"></div>
+<div id="in"><button class="rd" id="mic" title="محادثة صوتية حرّة">🎙️</button><input id="ip" autocomplete="off" placeholder="اكتب بالإنجليزية… أو اضغط 🎙️ وتحدّث"><button class="rd" id="snd" style="width:46px;height:46px;font-size:1.1rem">➤</button></div>
+<p class="t">اضغط 🎙️ مرة واحدة لبدء حوار صوتي متواصل بلا لمس — زوزا تستمع، تفكر، ثم تردّ بصوتها.</p>
+</main><footer>© جميع حقوق النشر والتوزيع محفوظة لمنشئ المحتوى — مسيو/ محمود أبوبكر السويدى</footer>
+<script>
+(function(){'use strict';
+var AI_URL=''; /* ضع رابط zoza-worker هنا لتفعيل العقل الذكي الحرّ */
+var LOGIN_USER='admin',LOGIN_PASS='000519'; /* غيّرهما كما تشاء (ملاحظة: ظاهران في كود الصفحة) */
+var $=function(s){return document.querySelector(s)},pk=new WeakMap(),pick=function(a){var u=pk.get(a);if(!u){u=[];pk.set(a,u)}if(u.length>=a.length)u.length=0;var i,n=0;do{i=Math.random()*a.length|0;n++}while(u.indexOf(i)>-1&&n<40);u.push(i);return a[i]};
+var ST=(function(){try{return JSON.parse(localStorage.getItem('zz-en'))}catch(e){}})()||{};
+ST=Object.assign({lv:'b',voice:1,tr:1,hands:0,xp:0,ai:'',f:{}},ST);
+function save(){try{localStorage.setItem('zz-en',JSON.stringify(ST))}catch(e){}}
+var fold=function(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’‘`´]/g,"'")};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var isAr=function(s){return /[\u0600-\u06FF]/.test(s)&&!/[a-zA-Z]{3,}/.test(s)};
+var cap1=function(s){s=String(s).trim();return s.charAt(0).toUpperCase()+s.slice(1)};
+/* ===== الغلاف ===== */
+if(ST.f.name)$('#nm').value=ST.f.name;
+$('#cgo').onclick=function(){var v=($('#nm').value||'').trim();if(v){ST.f.name=cap1(v);save()}var c=$('#cover');c.classList.add('out');setTimeout(function(){c.style.display='none'},750);window.zGo=1;if(window.zStart)window.zStart()};
+/* ===== قفل الدخول ===== */
+function unlock(){$('#lock').style.display='none';try{sessionStorage.setItem('zzauth','1')}catch(e){}}
+$('#go').onclick=function(){if($('#u').value===LOGIN_USER&&$('#p').value===LOGIN_PASS)unlock();else $('#er').style.display='block'};
+try{if(sessionStorage.getItem('zzauth'))$('#lock').style.display='none'}catch(e){}
+
+/* ===== الوجه: شفاه + رأس + عيون ===== */
+var A={mo:0,mw:1,to:0,tw:1,vs:.8,nx:0,nod:0,tilt:0,gx:0,gy:0,tgx:0,tgy:0,nb:2,bs:-9,brow:0,tb:0,t:0,sp:false,state:'idle',sacc:0,sf:0};
+var el={mt:$('#mt'),cmp:$('#cmp'),tt:$('#tt'),tg:$('#tg'),fig:$('#fig'),lA:$('#lA'),lB:$('#lB')};
+function frame(ts){var t=ts/1000,dt=Math.min(.05,t-(A.t||t));A.t=t;
+ if(A.sp){if(t>A.nx){A.nx=t+.08+Math.random()*.09;A.to=(.2+Math.random()*.75)*A.vs}}else{A.to=0;A.tw=1}
+ var k=Math.min(1,dt*20);A.mo+=(A.to-A.mo)*k;A.mw+=(A.tw-A.mw)*k;A.nod*=Math.pow(.02,dt);
+ var st=A.state,tl=0;
+ if(st==='idle')tl=2*Math.sin(t*.6);if(st==='listen'){tl=8+2*Math.sin(t*.9);A.tgx=0;A.tgy=0;A.tb=-3}
+ if(st==='think'){tl=-7;A.tgx=4;A.tgy=-3.5;A.tb=-5}
+ if(st==='speak'){tl=3*Math.sin(t*1.3)+2*Math.sin(t*2.7);A.tb=A.mo>.5?-2:0}
+ if(st==='idle'){A.tb=0}
+ if(t>A.sacc&&(st==='idle'||st==='speak')){A.sacc=t+1+Math.random()*2.5;A.tgx=(Math.random()-.5)*5;A.tgy=(Math.random()-.5)*3}
+ A.tilt+=(tl-A.tilt)*Math.min(1,dt*4);A.gx+=(A.tgx-A.gx)*Math.min(1,dt*12);A.gy+=(A.tgy-A.gy)*Math.min(1,dt*12);A.brow+=(A.tb-A.brow)*Math.min(1,dt*8);
+ var dy=A.nod*5+Math.sin(t*1.1)*1.5,dx=Math.sin(t*.5)*2+A.tilt*.5;
+ el.fig.style.transform='translate('+dx.toFixed(2)+'px,'+dy.toFixed(2)+'px) rotate('+((A.tilt+A.nod*2.5)*.6).toFixed(2)+'deg) scale('+(1+A.nod*.012+(st==='listen'?.025:0)).toFixed(3)+')';
+ if(t>A.nb){A.bs=t;A.nb=t+2+Math.random()*3.5}var b=t-A.bs,ly=b<.16?36*Math.sin(Math.PI*b/.16):0;
+ el.lA.setAttribute('ry',ly.toFixed(2));el.lB.setAttribute('ry',ly.toFixed(2));
+ A.sf+=((A.sp?1:0)-A.sf)*Math.min(1,dt*6);
+ var eff=.5*(1-A.sf)+A.sf*(.08+A.mo*.72),hw=45*(.7+.3*A.mw)*(1+.04*A.sf),cx=272,ty=243,tm=ty+8,bm=tm+6+eff*52,c2=2*bm-ty,
+  top='M'+(cx-hw)+' '+ty+'Q'+cx+' '+(ty+16)+' '+(cx+hw)+' '+ty,dm=top+'Q'+cx+' '+c2+' '+(cx-hw)+' '+ty+'Z';
+ el.mt.setAttribute('d',dm);el.cmp.setAttribute('d',dm);
+ el.tt.setAttribute('d',top+'L'+(cx+hw)+' '+(ty+9)+'Q'+cx+' '+(ty+25)+' '+(cx-hw)+' '+(ty+9)+'Z');
+ el.tg.setAttribute('cx',cx);el.tg.setAttribute('cy',(bm-6).toFixed(1));el.tg.setAttribute('rx',(hw*.42).toFixed(1));el.tg.setAttribute('ry',Math.max(0,(bm-tm)*.28).toFixed(1));
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+var LAB={idle:'✨ جاهزة',listen:'👂 أستمع إليك…',think:'💭 أفكّر…',speak:'🗣️ زوزا تتحدّث'};
+function setState(s){A.state=s;$('#stage').className=s;$('#stt').textContent=LAB[s]}
+function viseme(w){var f=w.toLowerCase(),m=f.match(/[aeiouy]/),v=m?m[0]:'a',V={a:[.95,1],e:[.55,1.15],i:[.45,1.2],o:[.65,.7],u:[.4,.55],y:[.45,1.1]}[v];
+ if(/oo|ou|ew|^w/.test(f))V=[.4,.55];else if(/ee|ea|ie/.test(f))V=[.5,1.2];A.vs=V[0];A.tw=V[1]}
+
+/* ===== الصوت: نطق زوزا بالإنجليزية ===== */
+var syn=window.speechSynthesis,VO=[];function lv_(){VO=(syn&&syn.getVoices())||[]}lv_();if(syn)syn.onvoiceschanged=lv_;
+function voice(){var f=VO.filter(function(v){return /^en/i.test(v.lang)}),fm=f.filter(function(v){return /samantha|zira|aria|jenny|libby|sonia|hazel|susan|karen|moira|tessa|serena|google (us|uk) english|female/i.test(v.name)});
+ return fm.filter(function(v){return /en[-_]US/i.test(v.lang)})[0]||fm[0]||f.filter(function(v){return /en[-_]US/i.test(v.lang)})[0]||f[0]}
+var RATE={b:.8,m:.92,a:1};
+function clean(t){return String(t).replace(/[«»]/g,'').replace(/[\u{1F300}-\u{1FAFF}\u2600-\u27BF]/gu,'').replace(/\s+/g,' ').trim()}
+var speaking=0;
+function speak(text,done){var tx=clean(text),ss=tx.match(/[^.!?…]+[.!?…]*/g)||[tx],i=0,fin=0,id=++speaking;
+ function end(){if(fin)return;fin=1;A.sp=false;A.nod=0;if(done)done()}
+ setState('speak');A.sp=true;A.nx=0;
+ if(!syn||!ST.voice){setTimeout(end,Math.min(6000,tx.length*55));return}
+ syn.cancel();
+ (function nx(){if(id!==speaking){return}if(i>=ss.length){end();return}var s=ss[i++].trim(),u=new SpeechSynthesisUtterance(s),v=voice(),ok=0;
+  $('#cap').textContent=s;if(/\?/.test(s))A.tb=-5;
+  u.lang='en-US';if(v)u.voice=v;u.rate=ST.slow?.6:RATE[ST.lv];u.pitch=1.1;
+  var go=function(){if(ok)return;ok=1;clearTimeout(wd);nx()},wd=setTimeout(go,s.length*120+2500);
+  u.onboundary=function(e){var w=s.substr(e.charIndex).match(/[a-z']+/i);if(w)viseme(w[0]);A.nod=.9;A.nx=0};
+  u.onend=go;u.onerror=go;syn.speak(u)})()}
+function stopSpeak(){speaking++;A.sp=false;if(syn)syn.cancel()}
+
+/* ===== الاستماع (محادثة صوتية حرّة) ===== */
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition,rec=null,busy=0,errs=0;
+function listen(){if(!ST.hands||busy||!SR)return;try{if(rec)rec.abort()}catch(e){}
+ var r=new SR(),got=0;r.lang='en-US';r.interimResults=true;r.maxAlternatives=1;rec=r;
+ r.onstart=function(){setState('listen');$('#cap').textContent='…'};
+ r.onresult=function(e){var x=e.results[e.results.length-1],tx=x[0].transcript;$('#cap').textContent=tx;if(x.isFinal){got=1;errs=0;handle(tx)}};
+ r.onerror=function(e){if(e.error==='not-allowed'||e.error==='service-not-allowed'){ST.hands=0;mic();note('⚠️ اسمح للمتصفح باستخدام الميكروفون.')}else errs++};
+ r.onend=function(){if(!got&&ST.hands&&!busy&&errs<6)setTimeout(listen,350);else if(!got&&!busy){setState('idle')}};
+ try{r.start()}catch(e){}}
+function mic(){$('#mic').classList.toggle('on',!!ST.hands)}
+$('#mic').onclick=function(){if(!SR){note('🎤 المتصفح لا يدعم التعرف على الصوت (استخدم Chrome أو Edge).');return}
+ ST.hands=ST.hands?0:1;save();mic();errs=0;if(ST.hands){ST.voice=1;stopSpeak();listen()}else{try{rec.abort()}catch(e){}setState('idle')}};
+
+/* ===== البيانات (الأساسية تُحمَّل من data/talk.json) ===== */
+var D={levels:{b:{ar:'مبتدئ',ic:'🌱'},m:{ar:'متوسط',ic:'🌿'},a:{ar:'متقدم',ic:'🌳'}},topics:[],react:{pos:[['Great!','رائع!'],['I love your answer!','أحببت إجابتك!']],neg:[['I understand.','أفهمك.']],neu:[['Interesting!','مثير للاهتمام!'],['Oh really?','حقًّا؟'],['I see!','فهمت!']],long:[['You express yourself very well!','تعبّر عن نفسك جيدًا!']]},jokes:[['Why was the math book sad? Because it had too many problems!','لأن لديه الكثير من «problems» أي مسائل ومشاكل!']],sayings:[['Practice makes perfect.','التمرين يصنع الإتقان.']],twisters:[['She sells seashells by the seashore.','هي تبيع الأصداف على شاطئ البحر.']]};
+var X=[['cine','🎬','السينما','Movies',['movie','movies','film','cinema','actor','series'],[['What is your favorite movie? Why?','ما فيلمك المفضل؟ ولماذا؟'],['Do you prefer movies or TV series?','هل تفضل الأفلام أم المسلسلات؟'],['If you were an actor, what role would you play?','لو كنت ممثلًا، فأي دور تؤدي؟']]],
+['music','🎵','الموسيقى','Music',['music','song','singer','guitar','piano'],[['What music are you listening to these days?','أي موسيقى تسمع هذه الأيام؟'],['Do you play an instrument?','هل تعزف على آلة؟'],['Can a song change your whole day?','هل تغيّر أغنية يومك كله؟']]],
+['animals','🐾','الحيوانات','Animals',['cat','dog','animal','bird','horse','pet'],[['What is your favorite animal?','ما حيوانك المفضل؟'],['Do you have a pet at home?','هل عندك حيوان أليف؟'],['If you could talk to an animal, which one would you choose?','لو استطعت محادثة حيوان، فأيها تختار؟']]],
+['space','🚀','الفضاء','Space',['space','moon','planet','star','mars','rocket'],[['Would you like to go to the Moon?','هل تحب الذهاب إلى القمر؟'],['Do you think there is life on Mars?','هل تظن أن هناك حياة على المريخ؟'],['Which planet would you like to visit?','أي كوكب تود زيارته؟']]],
+['egypt','🏺','مصر والتاريخ','Egypt and history',['egypt','pyramid','pharaoh','nile','history'],[['What do you know about the pyramids?','ماذا تعرف عن الأهرامات؟'],['What is your favorite place in Egypt?','ما مكانك المفضل في مصر؟'],['Which historical person do you admire?','أي شخصية تاريخية تُعجب بها؟']]],
+['cook','🍳','الطبخ','Cooking',['cook','cooking','recipe','cake','dish','kitchen'],[['Can you cook? What is your favorite dish?','هل تجيد الطبخ؟ ما طبقك المفضل؟'],['Which dessert would you like to try?','أي حلوى تود تذوقها؟'],['Who cooks best in your house?','من يطبخ أفضل في بيتك؟']]],
+['games','🎮','الألعاب','Games',['game','games','play','video','console'],[['Which game do you play the most?','أي لعبة تلعبها أكثر؟'],['Are video games good or bad?','هل ألعاب الفيديو جيدة أم سيئة؟'],['If you invented a game, what would it be like?','لو اخترعت لعبة، فكيف ستكون؟']]],
+['pref','🤔','تفضّل أيهما؟','Fun choices',['rather','choose','choice','prefer'],[['Would you rather fly like a bird or swim like a fish?','هل تفضل الطيران كطائر أم السباحة كسمكة؟'],['Would you rather live by the sea or in the mountains?','هل تفضل العيش قرب البحر أم في الجبال؟'],['Would you rather be very rich or very famous?','هل تفضل أن تكون غنيًّا جدًّا أم مشهورًا جدًّا؟']]],
+['env','🌍','البيئة','Our planet',['nature','environment','pollution','tree','water','recycle'],[['What do you do to protect nature?','ماذا تفعل لحماية الطبيعة؟'],['Why are trees important?','لماذا الأشجار مهمة؟'],['What will the Earth look like in one hundred years?','كيف ستكون الأرض بعد مئة عام؟']]]];
+var RID=[['I am full of holes but I can still hold water. What am I?','أنا مليء بالثقوب لكني أحتفظ بالماء. من أنا؟','sponge'],['The more you take away from me, the bigger I become. What am I?','كلما أخذوا مني صرتُ أكبر. من أنا؟','hole'],['I go up and down but I never move. What am I?','أصعد وأنزل دون أن أتحرك. من أنا؟','stairs'],['I speak without a mouth and hear without ears. What am I?','أتكلم بلا فم وأسمع بلا أذن. من أنا؟','echo']];
+var S={tp:null,qi:0,hist:[],turns:0,riddle:null,last:null};
+function norm(t){return t.q?t:{id:t[0],ic:t[1],ar:t[2],en:t[3],kw:t[4],hello:{b:['Let’s talk about this: '+t[3]+'!','لنتحدث عن '+t[2]+'!']},q:{b:t[5],m:t[5],a:t[5]}}}
+/* ===== الواجهة ===== */
+function chips(){$('#lv').innerHTML=['b','m','a'].map(function(l){return '<button data-lv="'+l+'" class="'+(ST.lv===l?'on':'')+'">'+D.levels[l].ic+' '+D.levels[l].ar+'</button>'}).join('');
+ $('#tp').innerHTML='<button data-tp="*">🎲 فاجئني</button><button data-tp="joke">😂 نكتة</button><button data-tp="riddle">🧩 لغز</button><button data-tp="twist">🗣️ لسان معقود</button><button data-tp="wise">📜 حكمة</button>'+D.topics.map(function(t){return '<button data-tp="'+t.id+'" class="'+(S.tp&&S.tp.id===t.id?'on':'')+'">'+t.ic+' '+t.ar+'</button>'}).join('');
+ $('#tg').innerHTML='<button data-tg="voice" class="'+(ST.voice?'on':'')+'">🔊 الصوت</button><button data-tg="tr" class="'+(ST.tr?'on':'')+'">🇪🇬 الترجمة</button><button data-tg="slow" class="'+(ST.slow?'on':'')+'">🐢 بطيء</button><button data-tg="name">👤 اسمي</button><button data-tg="ai">⚙️ العقل الذكي</button>'}
+function scroll_(){var c=$('#chat');setTimeout(function(){c.scrollTop=c.scrollHeight},30)}
+function note(t){var d=document.createElement('div');d.className='t';d.textContent=t;$('#chat').appendChild(d);scroll_()}
+function addZ(parts,sug,cb){var en=parts.map(function(p){return p.en}).filter(Boolean).join(' '),ar=parts.map(function(p){return p.ar}).filter(Boolean).join(' '),d=document.createElement('div');d.className='m';
+ d.innerHTML='<div class="tx">'+esc(en)+'</div>'+(ar?'<div class="ar" data-ar'+(ST.tr?'':' hidden')+'>'+esc(ar)+'</div>':'')+(en?'<button data-say="'+esc(en)+'">🔊</button>':'');
+ $('#chat').appendChild(d);scroll_();S.last={en:en,ar:ar};S.hist.push({role:'assistant',content:en||ar});
+ sgs(sug);if(en)speak(en,cb);else if(cb)cb()}
+function addU(t){var d=document.createElement('div');d.className='m u';d.innerHTML='<div class="tx">'+esc(t)+'</div><div class="fb"></div>';$('#chat').appendChild(d);scroll_();return d.querySelector('.fb')}
+function sgs(l){$('#sg').innerHTML=(l||[]).slice(0,4).map(function(s){return '<button data-fill="'+esc(s)+'">'+esc(s)+'</button>'}).join('')}
+/* ===== تصحيح محلي لأخطاء شائعة عند العرب ===== */
+var S3={go:'goes',have:'has',do:'does'},PAST={went:'go',saw:'see',ate:'eat',had:'have',came:'come',took:'take',did:'do',got:'get'};
+var RU=[[/\bi have (\d{1,2}) years?( old)?\b/gi,function(m,a){return 'I am '+a+' years old'},'العمر في الإنجليزية مع am وليس have: I am 15 years old.'],
+[/\bi (?:am|m) agree\b/gi,function(){return 'I agree'},'agree فعل بذاته، فلا نقول am قبله.'],
+[/\b(he|she|it) (don't|do not)\b/gi,function(m,a){return a+" doesn't"},'مع he/she/it نستعمل doesn’t.'],
+[/\b(he|she|it) (go|have|do|like|play|want|live|work|eat|speak|study|watch|love|need)\b/gi,function(m,a,b){var l=b.toLowerCase();return a+' '+(S3[l]||l+'s')},'مع he/she/it نضيف s إلى الفعل.'],
+[/\bpeople is\b/gi,function(){return 'people are'},'كلمة people جمع فنستعمل are.'],
+[/\bmore (better|bigger|easier|faster|cheaper|smaller)\b/gi,function(m,a){return a},'الصفة better وأخواتها للمقارنة بنفسها، فلا نضيف more.'],
+[/\b(didn'?t|did not) (went|saw|ate|had|came|took|did|got)\b/gi,function(m,a,b){return a+' '+PAST[b.toLowerCase()]},'بعد didn’t يأتي الفعل في صورته الأصلية.'],
+[/\ba (?!uni|use|eu|one|ura|usu)([aeiou]\w*)/gi,function(m,a){return 'an '+a},'قبل الكلمة التي تبدأ بحرف علة نستعمل an.'],
+[/(^|[\s(])i(?=[\s,.!?']|$)/g,function(m,a){return a+'I'},'ضمير I يُكتب دائمًا بحرف كبير.']];
+function fix(t){var c=t.replace(/[’‘`´]/g,"'"),is=[];RU.forEach(function(r){c=c.replace(r[0],function(){var m=arguments,n=r[1].apply(null,m);if(n!==m[0])is.push({wrong:m[0].trim(),right:n.trim(),why:r[2]});return n})});return is}
+function showFix(box,is){if(is.length)box.innerHTML='<div class="fx">✏️ <b>تصحيح:</b>'+is.map(function(i){return '<div><s dir="ltr">'+esc(i.wrong)+'</s> ← <u dir="ltr">'+esc(i.right)+'</u> — '+esc(i.why)+'</div>'}).join('')+'</div>'}
+/* ===== العقل المحلي ===== */
+var DAY=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function P(a){return{en:a[0],ar:a[1]}}
+function topicQ(){var t=S.tp;if(!t)return null;var l=(t.q[ST.lv]||t.q.b);if(S.qi>=l.length){S.tp=null;chips();return null}var q=l[S.qi++];return{parts:[{en:q[0],ar:q[1]}],sug:q[2]||[]}}
+function setTopic(t){S.tp=t;S.qi=0;chips();var h=t.hello&&(t.hello[ST.lv]||t.hello.b);return h&&h[0]?P(h):{en:'Let’s talk about this topic!',ar:'لنتحدث عن هذا الموضوع!'}}
+function surprise(){var l=D.topics.filter(function(t){return !S.tp||t.id!==S.tp.id});return pick(l)}
+function extract(t){var s=t.replace(/[’‘`´]/g,"'").toLowerCase(),m,o={};
+ if(m=s.match(/(?:my name is|my name's|call me|i am called)\s+([a-z'-]{2,20})/))o.name=cap1(m[1]);
+ if(m=s.match(/\bi(?: am|'m)\s+(\d{1,2})(?:\s+years?)?/))o.age=m[1];
+ if(m=s.match(/\bi live (?:in|at)\s+(?:the\s+)?([a-z-]{2,24})/))o.city=cap1(m[1]);
+ if(m=s.match(/\bi (?:like|love|enjoy)\s+(?:the |a |an |to )?([a-z' -]{3,24})/))o.like=m[1].trim();return o}
+function follow(t){var s=t.replace(/[’‘`´]/g,"'").toLowerCase().replace(/[.!?]+$/,''),m;
+ if(m=s.match(/\bi (?:love|like|enjoy)\s+(.{3,30})/))return{en:'Why do you like '+m[1]+'? Tell me more!',ar:'لماذا تحب ذلك؟ احكِ لي!'};
+ if(m=s.match(/\bi (?:don't like|do not like|hate|dislike)\s+(.{3,30})/))return{en:'Really? What don’t you like about '+m[1]+'?',ar:'حقًّا؟ ما الذي لا يعجبك في ذلك؟'};
+ if(m=s.match(/\bi(?: am|'m) (sad|tired|stressed|sick|bored|angry|happy|excited|glad)/))return{en:/sad|tired|stress|sick|bored|angry/.test(m[1])?'Oh, I’m sorry to hear that. What happened?':'That’s great! What makes you feel '+m[1]+'?',ar:'ما السبب؟ أخبرني.'};
+ if(m=s.match(/\bi (?:want|would like|hope|dream of)\s+(?:to\s+)?(.{3,40})/))return{en:'That’s a great goal! How will you get there?',ar:'هدف جميل! كيف ستحققه؟'};
+ if(m=s.match(/\bbecause\s+(.{3,})/))return{en:'I see your point. And what do you really think?',ar:'فهمت فكرتك. وما رأيك حقًّا؟'};
+ return null}
+function special(t){var f=fold(t).replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim(),n=new Date(),m;
+ if(S.riddle){var r=S.riddle;S.riddle=null;if(f.indexOf(r[2])>-1){ST.xp+=10;return{parts:[{en:'Bravo! The answer is “'+r[2]+'”. You are so clever!',ar:'أحسنت! الإجابة صحيحة.'}]}}return{parts:[{en:'Almost! The answer was “'+r[2]+'”. Shall we play again?',ar:'تقريبًا! الإجابة: '+r[2]}]}}
+ if(/^(hello|hi|hey|good morning|good evening|good afternoon)\b/.test(f)&&f.split(' ').length<=4)return{parts:[{en:'Hello'+(ST.f.name?' '+ST.f.name:'')+'! I’m so happy to see you. How are you today?',ar:'مرحبًا! سعيدة برؤيتك. كيف حالك اليوم؟'}]};
+ if(/(how are you|how s it going|are you ok)/.test(f))return{parts:[{en:'I’m doing great, thank you! And you, how do you feel today?',ar:'بخير، شكرًا! وأنت كيف تشعر اليوم؟'}]};
+ if(/(what is your name|what s your name|who are you)/.test(f))return{parts:[{en:'My name is Zoza! I’m your friend and your English teacher.',ar:'اسمي زوزا! صديقتك ومعلّمتك للإنجليزية.'}]};
+ if(/what time/.test(f))return{parts:[{en:'It’s '+n.getHours()+':'+('0'+n.getMinutes()).slice(-2)+'.',ar:'الساعة الآن '+n.getHours()+':'+('0'+n.getMinutes()).slice(-2)}]};
+ if(/(what day|what is the date|what s the date|today s date|what is today)/.test(f))return{parts:[{en:'Today is '+DAY[n.getDay()]+', '+MON[n.getMonth()]+' '+n.getDate()+', '+n.getFullYear()+'.',ar:'تاريخ اليوم.'}]};
+ if(/joke|funny/.test(f))return{parts:[P(pick(D.jokes))],sug:['Ha ha!','Another one!']};
+ if(/proverb|saying|wise/.test(f))return{parts:[P(pick(D.sayings))]};
+ if(/tongue twister/.test(f))return{parts:[P(pick(D.twisters))],sug:['Say it slowly']};
+ if(/riddle|puzzle/.test(f)){S.riddle=pick(RID);return{parts:[{en:S.riddle[0],ar:S.riddle[1]}]}}
+ if(/^(thanks|thank you)/.test(f))return{parts:[{en:'You’re welcome! It’s my pleasure.',ar:'عفوًا! يسعدني ذلك.'}]};
+ if(/(goodbye|bye|see you|good night)/.test(f))return{parts:[{en:'Goodbye! See you soon. You spoke very well today!',ar:'إلى اللقاء! أحسنت اليوم.'}]};
+ if(/(repeat|slower|slowly|do not understand|did not understand|don t understand|didn t understand)/.test(f)&&S.last){ST.slow=1;chips();return{parts:[{en:S.last.en,ar:'سأكرر ببطء: '+S.last.ar}]}}
+ if(m=f.match(/what (?:is|s) (\d+) (plus|minus|times|x) (\d+)/)){var a=+m[1],b=+m[3],r2=m[2]==='plus'?a+b:m[2]==='minus'?a-b:a*b;return{parts:[{en:a+' '+m[2]+' '+b+' is '+r2+'!',ar:'الناتج '+r2}]}}
+ return null}
+
+/* ===== أسئلة المتعلم: زوزا تجيب أولًا ثم تسأل ===== */
+var KB=[[/capital.*(england|uk|britain|united kingdom)/,'The capital of the United Kingdom is London.','عاصمة المملكة المتحدة هي لندن.'],
+[/capital.*(usa|america|united states)/,'The capital of the United States is Washington, D.C.','عاصمة الولايات المتحدة هي واشنطن العاصمة.'],
+[/capital.*egypt|\bcairo\b/,'The capital of Egypt is Cairo. It is a huge city on the Nile.','عاصمة مصر القاهرة، مدينة ضخمة على النيل.'],
+[/pyramid/,'The Pyramids of Giza are tombs of pharaohs. They are more than four thousand five hundred years old.','أهرامات الجيزة مقابر للفراعنة، عمرها أكثر من 4500 سنة.'],
+[/\bnile\b/,'The Nile is a very long river in Africa. It flows through Egypt from south to north.','النيل نهر طويل جدًّا في أفريقيا، يعبر مصر من الجنوب إلى الشمال.'],
+[/big ben/,'Big Ben is the famous bell in the clock tower of the Palace of Westminster in London.','بيغ بن هو الجرس الشهير في برج الساعة بقصر وستمنستر في لندن.'],
+[/statue of liberty/,'The Statue of Liberty is in New York. France gave it to the United States in 1886.','تمثال الحرية في نيويورك، أهدته فرنسا لأمريكا عام 1886.'],
+[/\bmoon\b/,'The Moon goes around the Earth. It is about three hundred eighty-four thousand kilometers away.','القمر يدور حول الأرض ويبعد نحو 384 ألف كيلومتر.'],
+[/\bsun\b/,'The Sun is a star. It gives us light and heat.','الشمس نجم يمنحنا الضوء والدفء.'],
+[/how many planets/,'There are eight planets in our solar system.','في نظامنا الشمسي ثمانية كواكب.'],
+[/(sky.*blue|why.*sky)/,'The sky is blue because the air scatters the blue light of the Sun more than the other colors.','السماء زرقاء لأن الهواء يشتّت الضوء الأزرق للشمس أكثر من باقي الألوان.'],
+[/how many days.*year/,'A year has three hundred sixty-five days, and sometimes three hundred sixty-six.','السنة 365 يومًا، وأحيانًا 366.'],
+[/(who|what).*(created|made|built|invented) you|your creator/,'Mr. Mahmoud Aboubakr Al-Suwaidi created me to help you speak English.','أنشأني مسيو محمود أبوبكر السويدى لأساعدك على تعلّم الإنجليزية.'],
+[/how old are you|your age/,'I’m a robot, so I have no age. But I’m always young at heart!','أنا روبوت فلا عمر لي، لكنني شابة دائمًا!'],
+[/(how many people speak english|english speakers|how many.*speak english)/,'About one and a half billion people speak English around the world, as a first or second language.','نحو مليار ونصف يتحدثون الإنجليزية في العالم كلغة أولى أو ثانية.'],
+[/(how|tips?|advice).*(learn|improve|practice|speak).*english|learn english/,'Listen to English every day, speak out loud, read short stories, and don’t be afraid of mistakes!','استمع للإنجليزية يوميًا، وتحدّث بصوت عالٍ، واقرأ قصصًا قصيرة، ولا تخف من الأخطاء!'],
+[/(verb to be|conjugat.*\bbe\b|am is are)/,'The verb to be: I am, you are, he is, she is, it is, we are, they are.','فعل to be: I am, you are, he/she/it is, we are, they are.'],
+[/(verb to have|conjugat.*\bhave\b)/,'The verb to have: I have, you have, he has, she has, we have, they have.','فعل to have: I have, you have, he/she/it has, we have, they have.'],
+[/(difference|when).*(\ba\b.*\ban\b|a or an)/,'We use “a” before a consonant sound, like “a book”. We use “an” before a vowel sound, like “an apple”.','نستعمل a قبل صوت ساكن مثل a book، وan قبل صوت علة مثل an apple.'],
+[/(difference.*(do|does)|do or does)/,'We use “does” with he, she and it. We use “do” with I, you, we and they.','نستعمل does مع he/she/it، وdo مع I/you/we/they.'],
+[/football|soccer|salah/,'Football is very popular in England and in Egypt. Mohamed Salah is a great Egyptian player.','كرة القدم محبوبة في إنجلترا ومصر، ومحمد صلاح لاعب مصري كبير.']];
+var PE=[['I love chatting with you and learning new things!','أحب الحديث معك وتعلّم أشياء جديدة!'],['Good question! I’m always in a great mood.','سؤال جيد! أنا دائمًا في مزاج رائع.']];
+function isQ(t,f){return /\?\s*$/.test(t)||/^(what|how|why|when|where|who|which|whose|do |does |did |is |are |am |was |were |can |could |will |would |should |have |has )/.test(f)||/^(ما|ماذا|لماذا|كيف|هل|من |متى|أين|كم)/.test(t.trim())}
+var UQ=[['Good question! I’m not sure about the exact answer.','سؤال جيد! لست متأكدة من الإجابة الدقيقة.'],['Hmm, that’s a hard one for me!','سؤال صعب عليّ!'],['I don’t really know the answer, sorry.','لا أعرف الإجابة جيدًا، آسفة.'],['Wow, you’ve really stumped me!','سؤال محيّر فعلًا!']];
+function answer(t,f){if(!isQ(t,f))return null;var i;
+ for(i=0;i<KB.length;i++)if(KB[i][0].test(f))return{parts:[{en:KB[i][1],ar:KB[i][2]}]};
+ if(isAr(t))return{parts:[{en:'I understood that you have a question! Try asking it in English, even with simple words.',ar:'حاول صياغة سؤالك بالإنجليزية ولو ببساطة، وسأساعدك.'}]};
+ var lk=f.match(/^do you (?:like|love|enjoy) (?:the |a |an |to )?([a-z' ]{2,25})/);if(lk)return{parts:[{en:'Yes, I love '+lk[1].replace(/\s+$/,'')+'! It always makes me happy.',ar:'نعم، أحب ذلك كثيرًا!'}]};
+ if(/\byou\b|\byour\b|\byours\b/.test(f))return{parts:[P(pick(PE))]};
+ var r={parts:[P(pick(UQ))]};if(!S.hinted){S.hinted=1;r.parts.push({en:'',ar:'💡 للإجابة عن أي سؤال بحرّية فعّل زر ⚙️ العقل الذكي.'})}return r}
+function localReply(t){var fc=extract(t),k;for(k in fc)ST.f[k]=fc[k];save();
+ var sp=special(t);if(sp)return sp;var f=fold(t),toks=f.split(/[^a-z]+/),best=null,bs=0;
+ var an=answer(t,f);if(an){var q0=topicQ();if(!q0){var nt0=surprise();an.parts.push(setTopic(nt0));q0=topicQ()}if(q0){an.parts=an.parts.concat(q0.parts);an.sug=q0.sug}return an}
+ D.topics.forEach(function(tp){var sc=tp.kw.filter(function(w){return toks.indexOf(w)>-1}).length;if(sc>bs){bs=sc;best=tp}});
+ var parts=[],sug=[];
+ if(best&&(!S.tp||S.tp.id!==best.id)){parts.push(P(pick(D.react.pos)));parts.push(setTopic(best))}
+ else{var neg=/(don't like|do not like|hate|sad|tired|difficult|boring|bored)/.test(f),pos=/(i like|i love|great|awesome|happy|glad)/.test(f);
+  parts.push(fc.name?{en:'Nice to meet you, '+fc.name+'! What a lovely name.',ar:'تشرفت بمعرفتك!'}:fc.age?{en:fc.age+' years old, what a nice age!',ar:'سنّ جميلة!'}:P(pick(f.split(/\s+/).length>=7?D.react.long:neg&&!pos?D.react.neg:pos?D.react.pos:D.react.neu)));
+  var fl=follow(t);if(fl&&S.turns%2===0){parts.push(fl);return{parts:parts,sug:['Because…','I don’t know.']}}}
+ if(ST.f.name&&S.turns%5===4&&ST.f.like)parts.push({en:'By the way, '+ST.f.name+', you told me you like '+ST.f.like+'. Tell me more!',ar:'ذكرتَ أنك تحب ذلك. أخبرني المزيد!'});
+ else{var q=topicQ();if(!q){var nt=surprise();parts.push({en:'Let’s change the subject!',ar:'لنغيّر الموضوع!'});parts.push(setTopic(nt));q=topicQ()}if(q){parts=parts.concat(q.parts);sug=q.sug}}
+ return{parts:parts,sug:sug}}
+/* ===== الذكاء الاصطناعي (اختياري) ===== */
+function url(){return window.ZOZA_AI_URL||AI_URL||ST.ai||''}
+function askAI(t){var c=window.AbortController?new AbortController():null,to=setTimeout(function(){c&&c.abort()},15000);
+ return fetch(url(),{method:'POST',headers:{'Content-Type':'application/json'},signal:c?c.signal:undefined,body:JSON.stringify({message:t,history:S.hist.slice(-20),level:ST.lv,topic:S.tp?S.tp.en:'',name:ST.f.name||'',facts:ST.f})}).then(function(r){clearTimeout(to);if(!r.ok)throw 0;return r.json()})}
+/* ===== معالجة الرسالة ===== */
+function done(){busy=0;if(ST.hands)setTimeout(listen,250);else setState('idle')}
+function handle(t){t=String(t||'').trim();if(!t||busy)return;busy=1;try{rec&&rec.abort()}catch(e){}stopSpeak();
+ var box=addU(t);S.hist.push({role:'user',content:t});S.turns++;ST.xp+=3;save();
+ if(!isAr(t))showFix(box,fix(t));setState('think');A.tb=-5;$('#cap').textContent='';
+ var out=function(r){if(!url()&&ST.f.name&&S.turns%3===1&&r.parts&&r.parts[0]&&r.parts[0].en){var q0=r.parts[0],lead=(/^[A-Z][a-z]/.test(q0.en)&&!/^I\b/.test(q0.en))?q0.en.charAt(0).toLowerCase()+q0.en.slice(1):q0.en;r.parts[0]={en:ST.f.name+', '+lead,ar:q0.ar}}setTimeout(function(){addZ(r.parts,r.sug,done)},500+Math.min(700,t.length*8))};
+ if(url())askAI(t).then(function(r){var parts=[{en:r.reply_en||'',ar:r.reply_ar||''}];if(r.tip_ar)parts.push({en:'',ar:'💡 '+r.tip_ar});
+   if((r.corrections||[]).length)box.innerHTML='<div class="fx">✏️ <b>ملاحظات زوزا:</b>'+r.corrections.map(function(c){return '<div><s dir="ltr">'+esc(c.wrong)+'</s> ← <u dir="ltr">'+esc(c.right)+'</u> — '+esc(c.why_ar||'')+'</div>'}).join('')+'</div>';
+   out({parts:parts,sug:r.suggestions_en})}).catch(function(){out(localReply(t))});
+ else out(localReply(t))}
+function startTopic(id){var r;busy=1;stopSpeak();try{rec&&rec.abort()}catch(e){}
+ if(id==='*'){r=setTopic(surprise());var q=topicQ();addZ([r].concat(q?q.parts:[]),q?q.sug:[],done);return}
+ if(id==='joke'){addZ([P(pick(D.jokes))],['Ha ha!','Another one!'],done);return}
+ if(id==='wise'){addZ([P(pick(D.sayings))],['That’s nice!'],done);return}
+ if(id==='twist'){addZ([P(pick(D.twisters)),{en:'',ar:'جرّب أن تكررها بصوتك!'}],['I’ll try!'],done);return}
+ if(id==='riddle'){S.riddle=pick(RID);addZ([{en:S.riddle[0],ar:S.riddle[1]}],[],done);return}
+ var t=D.topics.filter(function(x){return x.id===id})[0];r=setTopic(t);var q2=topicQ();addZ([r].concat(q2.parts),q2.sug,done)}
+$('#snd').onclick=function(){var v=$('#ip').value;$('#ip').value='';handle(v)};
+$('#ip').onkeydown=function(e){if(e.key==='Enter'){var v=this.value;this.value='';handle(v)}};
+document.addEventListener('click',function(e){var x=e.target.closest('button');if(!x)return;var d=x.dataset;
+ if(d.lv){ST.lv=d.lv;save();chips()}else if(d.tp)startTopic(d.tp);else if(d.say){busy=1;speak(d.say,done)}
+ else if(d.fill){handle(d.fill)}
+ else if(d.tg==='name'){var nv=prompt('ما اسمك؟ (يُفضّل بحروف لاتينية)',ST.f.name||'');if(nv&&nv.trim()){ST.f.name=cap1(nv);save();note('جميل! ستناديك زوزا: '+ST.f.name)}}
+ else if(d.tg==='ai'){var v=prompt('ألصق رابط zoza-worker (https://…) أو اتركه فارغًا للوضع المحلي:',ST.ai||'');if(v!==null){ST.ai=v.trim();save();note(ST.ai?'تم تفعيل العقل الذكي ✅':'الوضع المحلي')}}
+ else if(d.tg){ST[d.tg]=ST[d.tg]?0:1;save();chips();if(d.tg==='tr')document.querySelectorAll('[data-ar]').forEach(function(a){a.hidden=!ST.tr});if(d.tg==='voice'&&!ST.voice)stopSpeak()}});
+/* ===== الإقلاع ===== */
+var MR={pos:[['Wonderful!','رائع!'],['What a great answer!','إجابة جميلة!'],['Well done, keep going!','أحسنت، استمر!'],['Excellent, your English is improving!','ممتاز، إنجليزيتك تتحسن!']],neg:[['Oh, that’s too bad.','يا للأسف.'],['I’m here for you.','أنا هنا بجانبك.'],['No worries, it happens.','لا بأس، هذا يحدث.']],neu:[['Oh, okay!','آه، حسنًا!'],['Is that so?','حقًّا؟'],['I didn’t know that!','لم أكن أعلم!'],['Hmm, interesting.','همم، مثير.'],['No way!','يا للعجب!'],['Okay, I’ll remember that!','حسنًا، سأتذكر ذلك!']],long:[['Wow, what a nice sentence!','يا لها من جملة جميلة!'],['You’re speaking better and better!','تتحدث أفضل فأفضل!']]};
+function ready(){['pos','neg','neu','long'].forEach(function(k){D.react[k]=(D.react[k]||[]).concat(MR[k])});D.topics=D.topics.concat(X.map(norm));
+ ['b','m','a'].forEach(function(l){if(D.levels[l]&&D.levels[l].rate)RATE[l]=D.levels[l].rate});chips();mic();setState('idle');
+ window.zStart=function(){if(window.zDone)return;window.zDone=1;var n=ST.f.name;addZ([{en:'Hello'+(n?' '+n:'')+'! I’m Zoza, your friend. Tap the mic and let’s speak English together!',ar:'مرحبًا! أنا زوزا صديقتك. اضغط على الميكروفون ولنتحدث بالإنجليزية معًا!'}],['Hello Zoza!','My name is …'],function(){busy=0;if(ST.hands)listen()})};if(window.zGo)window.zStart()}
+busy=1;fetch('data/talk.json').then(function(r){return r.json()}).then(function(j){if(j.levels)D.levels=j.levels;D.topics=j.topics||[];['react','jokes','sayings','twisters'].forEach(function(k){if(j[k])D[k]=j[k]})}).catch(function(){}).then(ready);
+})();
+</script></body></html>
